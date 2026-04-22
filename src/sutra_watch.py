@@ -15,10 +15,12 @@ import urllib3
 from src.keywords import build_topics, extract_keywords
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 RADICACION_RE = re.compile(
     r"(?:Fecha\s+de\s+Radicaci[oó]n|Radicad[oa])\s*:?\s*(\d{1,2}/\d{1,2}/\d{4})",
     re.IGNORECASE,
 )
+
 BASE_URL = "https://sutra.oslpr.org"
 MEASURE_CODE_RE = re.compile(r"\b(?:PC|PS|RC|RS|RCC|RCS)\s*0*\d+\b", re.IGNORECASE)
 
@@ -38,6 +40,14 @@ def save_state(path: str, state: Dict) -> None:
     tmp = path + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(state, f, ensure_ascii=False, indent=2)
+    os.replace(tmp, path)
+
+
+def save_json(path: str, data) -> None:
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
     os.replace(tmp, path)
 
 
@@ -143,11 +153,7 @@ def parse_detail_page(detail_html: str, url: str) -> Dict:
     fecha_radicacion = radicacion_match.group(1) if radicacion_match else ""
 
     if not fecha_radicacion:
-        generic_date_match = re.search(
-            r"\b(\d{1,2}/\d{1,2}/\d{4})\b",
-            text,
-            re.IGNORECASE,
-        )
+        generic_date_match = re.search(r"\b(\d{1,2}/\d{1,2}/\d{4})\b", text, re.IGNORECASE)
         if generic_date_match:
             fecha_radicacion = generic_date_match.group(1)
 
@@ -170,22 +176,22 @@ def parse_detail_page(detail_html: str, url: str) -> Dict:
     }
 
 
-def post_to_zapier(session: requests.Session, hook_url: str, payload: Dict) -> None:
-    print("[POST] Sending to Zapier")
-    print(json.dumps(payload, ensure_ascii=False)[:700])
-
-    r = session.post(hook_url, json=payload, timeout=25)
-    print("[POST STATUS]", r.status_code)
-    print(r.text[:500])
-    r.raise_for_status()
+def build_output_item(item: Dict, hits: List[str], checked_at: str) -> Dict:
+    return {
+        "id": item.get("id", ""),
+        "url": item.get("url", ""),
+        "numero_o_nombre": item.get("measure", ""),
+        "titulo_completo": item.get("title", ""),
+        "fecha_radicacion": item.get("fecha_radicacion", ""),
+        "resumen_breve": item.get("summary", ""),
+        "temas_detectados": hits,
+        "checked_at": checked_at,
+    }
 
 
 def main():
-    zapier_hook = os.environ.get("ZAPIER_HOOK_URL", "").strip()
-    if not zapier_hook:
-        raise RuntimeError("Missing ZAPIER_HOOK_URL")
-
     state_path = os.environ.get("STATE_PATH", "state.json")
+    output_path = os.environ.get("OUTPUT_PATH", "data/medidas_filtradas.json")
     lookback_days = int(os.environ.get("LOOKBACK_DAYS", "20"))
 
     now = dt.datetime.now(dt.timezone.utc)
@@ -232,44 +238,18 @@ def main():
 
         print("[INFO] New matches:", len(new_items))
 
-        if new_items:
-            for item in new_items:
-                payload = {
-                    "measure": item.get("measure", ""),
-                    "title": item.get("title", ""),
-                    "summary": item.get("summary", ""),
-                    "hits": ", ".join(item.get("hits", [])),
-                    "url": item.get("url", ""),
-                    "checked_at": now_iso,
-                    "is_empty": False,
-                    "status": "New relevant measure found in recent radicadas window",
-                    "fecha_radicacion": item.get("fecha_radicacion", ""),
-                }
+        output_items = []
+        for item in new_items:
+            output_items.append(build_output_item(item, item.get("hits", []), now_iso))
+            seen[item["id"]] = now_iso
 
-                post_to_zapier(session, zapier_hook, payload)
-                seen[item["id"]] = now_iso
-        else:
-            payload = {
-                "measure": "",
-                "title": "",
-                "summary": "",
-                "hits": "",
-                "url": "",
-                "checked_at": now_iso,
-                "is_empty": True,
-                "status": "No new relevant measures found in recent radicadas window",
-            }
-            post_to_zapier(session, zapier_hook, payload)
-
+        save_json(output_path, output_items)
         save_state(state_path, state)
-        print("[INFO] state.json updated")
 
-    except Exception as e:
-        import traceback
-        print("[FATAL]", repr(e))
-        traceback.print_exc()
-        save_state(state_path, state)
-        raise
+        print(f"[OK] Saved {len(output_items)} items to {output_path}")
+
+    finally:
+        session.close()
 
 
 if __name__ == "__main__":
