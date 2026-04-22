@@ -32,14 +32,17 @@ jobs:
             echo '{"seen": {}}' > state.json
           fi
 
-     #  - name: Run scraper
-    #       env:
-      #       ZAPIER_HOOK_URL: ${{ secrets.ZAPIER_HOOK_URL }}
-       #      STATE_PATH: state.json
-        #     LOOKBACK_DAYS: 20
-       #    run: python -m src.sutra_watch
+      - name: Ensure data folder exists
+        run: mkdir -p data
 
-      - name: Commit updated state.json
+      - name: Run scraper
+        env:
+          STATE_PATH: state.json
+          OUTPUT_PATH: data/medidas_filtradas.json
+          LOOKBACK_DAYS: 20
+        run: python -m src.sutra_watch
+
+      - name: Commit updated files
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
