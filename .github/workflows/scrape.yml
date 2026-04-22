@@ -1,0 +1,48 @@
+name: scrape
+
+on:
+  schedule:
+    - cron: "0 10 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 lxml urllib3
+
+      - name: Ensure state.json exists
+        run: |
+          if [ ! -f state.json ]; then
+            echo '{"seen": {}}' > state.json
+          fi
+
+      - name: Run scraper
+        env:
+          ZAPIER_HOOK_URL: ${{ secrets.ZAPIER_HOOK_URL }}
+          STATE_PATH: state.json
+          LOOKBACK_DAYS: 20
+        run: python -m src.sutra_watch
+
+      - name: Commit updated state.json
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add state.json
+          git commit -m "Update state.json" || echo "No changes to commit"
+          git push
