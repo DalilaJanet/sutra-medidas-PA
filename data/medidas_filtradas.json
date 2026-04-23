@@ -1,15 +1,1 @@
-[
-  {
-    "id": "abc123...",
-    "url": "https://sutra.oslpr.org/medidas/152520",
-    "numero_o_nombre": "PC0026",
-    "titulo_completo": "Para enmendar ...",
-    "fecha_radicacion": "01/15/2026",
-    "resumen_breve": "Texto resumido de la medida...",
-    "temas_detectados": [
-      "Salarios",
-      "Trabajadores"
-    ],
-    "checked_at": "2026-04-22T20:00:00+00:00"
-  }
-]
+[]
