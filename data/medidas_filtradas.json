@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": "aebb6bbe89bc5d1dae6df3a2",
+    "url": "https://sutra.oslpr.org/medidas/161372",
+    "numero_o_nombre": "PC1292",
+    "titulo_completo": "Proyecto de la Cámara (PC1292)",
+    "fecha_radicacion": "05/28/2026",
+    "resumen_breve": "Sistema Único de Trámite Legislativo Inicio Trámite Legislativo Prontuario Legislativo Directorio de Asamblea Legislativa Legislación Municipal Informes Ayuda Trámites Proyecto de la Cámara (PC1292) Cuatrienio: 2025-2028 Fecha de Radicación: 05/28/2026 Título: Para enmendar el inciso 35, del Artículo 2.04 de la Ley 85-2018, según enmendada, conocida como “Ley de Reforma Educativa de Puerto Rico”; y, para añadir un nuevo inciso (v) al Artículo 4 del Plan de Reorganización del Departamento de la Familia, Plan de Reorganización Núm. 1 de 28 de julio de 1995, según enmendado; a los fines de establecer el deber de capacitar anualmente a los trabajadores sociales en temas relacionados con la viole",
+    "temas_detectados": [
+      "Trabajadores"
+    ],
+    "checked_at": "2026-06-01T15:51:12.150865+00:00"
+  },
+  {
+    "id": "2b9cfc96c897375e0bb9e607",
+    "url": "https://sutra.oslpr.org/medidas/161371",
+    "numero_o_nombre": "RS0537",
+    "titulo_completo": "Resolución del Senado (RS0537)",
+    "fecha_radicacion": "05/29/2026",
+    "resumen_breve": "Sistema Único de Trámite Legislativo Inicio Trámite Legislativo Prontuario Legislativo Directorio de Asamblea Legislativa Legislación Municipal Informes Ayuda Trámites Resolución del Senado (RS0537) Cuatrienio: 2025-2028 Fecha de Radicación: 05/29/2026 Título: Para ordenar a la Comisión de Turismo, Recursos Naturales y Ambientales del Senado\nde Puerto Rico realizar una investigación sobre la legalidad, cumplimiento\nambiental, corrección administrativa y conformidad con la planificación urbana de\nlos proyectos de construcción de viviendas propuesto por la empresa Alturas de\nFairview Development Corp., localizados en terrenos de la Urbanización Villas de\nCupey, en el Municipio de San Juan; exa",
+    "temas_detectados": [
+      "Municipio de San Juan"
+    ],
+    "checked_at": "2026-06-01T15:51:12.150865+00:00"
+  }
+]
