@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": "eac6fdf5277824d298762ada",
+    "url": "https://sutra.oslpr.org/medidas/162046",
+    "numero_o_nombre": "PC1411",
+    "titulo_completo": "Proyecto de la Cámara (PC1411)",
+    "fecha_radicacion": "08/27/2026",
+    "resumen_breve": "Sistema Único de Trámite Legislativo Inicio Trámite Legislativo Prontuario Legislativo Directorio de Asamblea Legislativa Legislación Municipal Informes Ayuda Trámites Proyecto de la Cámara (PC1411) Cuatrienio: 2025-2028 Fecha de Radicación: 08/27/2026 Título: Para enmendar la Ley Núm. 9 de 20 de enero de 2018, conocida como la “Ley sobre el Cálculo de las Propinas”, a los fines de ampliar su política pública para proteger la voluntad del consumidor respecto al destinatario de una propina; reconocer la titularidad del empleado o empleados a quienes se destine una gratificación voluntaria; establecer que la participación de un empleado en un sistema de distribución o fondo común de propinas s",
+    "temas_detectados": [
+      "Trabajadores"
+    ],
+    "checked_at": "2026-09-01T14:24:54.672774+00:00"
+  },
+  {
+    "id": "7f200f93d39a3bb1bcbb5539",
+    "url": "https://sutra.oslpr.org/medidas/162010",
+    "numero_o_nombre": "PS1430",
+    "titulo_completo": "Proyecto del Senado (PS1430)",
+    "fecha_radicacion": "08/20/2026",
+    "resumen_breve": "Sistema Único de Trámite Legislativo Inicio Trámite Legislativo Prontuario Legislativo Directorio de Asamblea Legislativa Legislación Municipal Informes Ayuda Trámites Proyecto del Senado (PS1430) Cuatrienio: 2025-2028 Fecha de Radicación: 08/20/2026 Medida de Administración: A-154 Equivalente: pc1401 Título: “Para crear el nuevo Centro Integral de Investigaciones, Educación y Servicios Médicos para la Diabetes Carlos Romero Barceló, adscrita al Departamento de Salud; transferir las funciones, poderes, facultades, obligaciones, personal, propiedad mueble e inmueble, récords, fondos y programas del actual Centro de Investigaciones, Educación y Servicios Médicos para la Diabetes; establecer to",
+    "temas_detectados": [
+      "Trabajadores"
+    ],
+    "checked_at": "2026-09-01T14:24:54.672774+00:00"
+  }
+]
