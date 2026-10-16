@@ -1,14 +1,50 @@
 [
   {
-    "id": "74564d36e1d108f3b65c1e22",
-    "url": "https://sutra.oslpr.org/medidas/162583",
-    "numero_o_nombre": "RCS0223",
-    "titulo_completo": "Resolución Conjunta del Senado (RCS0223)",
+    "id": "5f308723e9bbd4eef2afbe35",
+    "url": "https://sutra.oslpr.org/medidas/162589",
+    "numero_o_nombre": "PC1505",
+    "titulo_completo": "Proyecto de la Cámara (PC1505)",
     "fecha_radicacion": "10/14/2026",
-    "resumen_breve": "Sistema Único de Trámite Legislativo Inicio Trámite Legislativo Prontuario Legislativo Directorio de Asamblea Legislativa Legislación Municipal Informes Ayuda Trámites Resolución Conjunta del Senado (RCS0223) Cuatrienio: 2025-2028 Fecha de Radicación: 10/14/2026 Título: Para ordenar al Departamento de Educación de Puerto Rico, en coordinación y colaboración con la Universidad de Puerto Rico en Utuado, el establecimiento de un proyecto piloto denominado «Red AgroEmpresarial de la Montaña» (RAM-PR), dirigido a promover la educación agroempresarial, el emprendimiento juvenil, la agricultura sostenible y el relevo generacional agrícola entre los estudiantes de las escuelas públicas de los munici",
+    "resumen_breve": "Sistema Único de Trámite Legislativo Inicio Trámite Legislativo Prontuario Legislativo Directorio de Asamblea Legislativa Legislación Municipal Informes Ayuda Trámites Proyecto de la Cámara (PC1505) Cuatrienio: 2025-2028 Fecha de Radicación: 10/14/2026 Título: Para enmendar el Artículo 6 de la Ley Núm. 379 de 15 de mayo de 1948, según enmendada, conocida como la “Ley para Establecer la Jornada de Trabajo en Puerto Rico”, con el fin de aclarar la facultad del patrono de establecer la jornada de trabajo diaria y semanal de empleados cubiertos por las disposiciones de la ley, sujeto al cumplimiento con el pago de horas extra y penalidades correspondientes, y para otros fines relacionados. Selec",
+    "temas_detectados": [
+      "Trabajadores"
+    ],
+    "checked_at": "2026-10-16T14:25:12.491431+00:00"
+  },
+  {
+    "id": "e771f6e004bb7dfe9c4fbefa",
+    "url": "https://sutra.oslpr.org/medidas/162590",
+    "numero_o_nombre": "PC1506",
+    "titulo_completo": "Proyecto de la Cámara (PC1506)",
+    "fecha_radicacion": "10/14/2026",
+    "resumen_breve": "Sistema Único de Trámite Legislativo Inicio Trámite Legislativo Prontuario Legislativo Directorio de Asamblea Legislativa Legislación Municipal Informes Ayuda Trámites Proyecto de la Cámara (PC1506) Cuatrienio: 2025-2028 Fecha de Radicación: 10/14/2026 Título: Para enmendar la sección 4 (i) de la Ley 95 del 29 de junio de 1963, según enmendada, para ampliar las oportunidades de los sindicatos y uniones que representan empleados públicos bajo las disposiciones de la Ley 45 del 28 de febrero de 1998 en el proceso de negociar y contratar un, o más de un plan médico para sus afiliados, garantizando el derecho de los empleados públicos unionados de seleccionar entre varios su plan de salud entre ",
+    "temas_detectados": [
+      "Trabajadores"
+    ],
+    "checked_at": "2026-10-16T14:25:12.491431+00:00"
+  },
+  {
+    "id": "e39606226208981ffa0d651b",
+    "url": "https://sutra.oslpr.org/medidas/162592",
+    "numero_o_nombre": "PC1508",
+    "titulo_completo": "Proyecto de la Cámara (PC1508)",
+    "fecha_radicacion": "10/14/2026",
+    "resumen_breve": "Sistema Único de Trámite Legislativo Inicio Trámite Legislativo Prontuario Legislativo Directorio de Asamblea Legislativa Legislación Municipal Informes Ayuda Trámites Proyecto de la Cámara (PC1508) Cuatrienio: 2025-2028 Fecha de Radicación: 10/14/2026 Título: Para crear la \"Ley para la Independencia, Profesionalización y Uniformidad de la Adjudicación Administrativa del Gobierno de Puerto Rico\"; establecer la Oficina de Adjudicación Administrativa de Puerto Rico como una entidad independiente de la Rama Ejecutiva encargada de celebrar y adjudicar, con las excepciones expresamente dispuestas, los procedimientos administrativos de naturaleza adversativa que se originen en las agencias, depart",
+    "temas_detectados": [
+      "Trabajadores"
+    ],
+    "checked_at": "2026-10-16T14:25:12.491431+00:00"
+  },
+  {
+    "id": "ede30ab87529b0c157d8ae33",
+    "url": "https://sutra.oslpr.org/medidas/162618",
+    "numero_o_nombre": "PS1534",
+    "titulo_completo": "Proyecto del Senado (PS1534)",
+    "fecha_radicacion": "10/15/2026",
+    "resumen_breve": "Sistema Único de Trámite Legislativo Inicio Trámite Legislativo Prontuario Legislativo Directorio de Asamblea Legislativa Legislación Municipal Informes Ayuda Trámites Proyecto del Senado (PS1534) Cuatrienio: 2025-2028 Fecha de Radicación: 10/15/2026 Título: Para crear la “Ley para la Administración de Epinefrina en Situaciones de Emergencia en las Instituciones Escolares Públicas y Privadas de Puerto Rico”, a los fines de establecer el protocolo para la recepción, custodia y administración de epinefrina mediante autoinyector a estudiantes que tengan dicho medicamento prescrito; autorizar a personal escolar debidamente adiestrado a administrar el autoinyector prescrito al estudiante en casos",
     "temas_detectados": [
       "Departamento de Educación"
     ],
-    "checked_at": "2026-10-15T14:33:53.410932+00:00"
+    "checked_at": "2026-10-16T14:25:12.491431+00:00"
   }
 ]
