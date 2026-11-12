@@ -1,26 +1,16 @@
 [
   {
-    "id": "00367e438a677bff0bfa10b1",
-    "url": "https://sutra.oslpr.org/medidas/162944",
-    "numero_o_nombre": "PC1591",
-    "titulo_completo": "Proyecto de la Cámara (PC1591)",
-    "fecha_radicacion": "11/10/2026",
-    "resumen_breve": "Sistema Único de Trámite Legislativo Inicio Trámite Legislativo Prontuario Legislativo Directorio de Asamblea Legislativa Legislación Municipal Informes Ayuda Trámites Proyecto de la Cámara (PC1591) Cuatrienio: 2025-2028 Fecha de Radicación: 11/10/2026 Título: Para crear la “Ley de Licencia Especial con Paga para el Acompañamiento Médico, Terapéutico y Educativo de Hijos con Necesidades Especiales”, a los fines de establecer una licencia especial con paga para los empleados de los sectores público y privado que sean madres, padres, tutores o custodios legales de menores y otras personas con impedimentos, condiciones del desarrollo o condiciones crónicas de salud que requieran servicios médic",
+    "id": "7ff7fe136286c2f18caff9cd",
+    "url": "https://sutra.oslpr.org/medidas/162978",
+    "numero_o_nombre": "PC1594",
+    "titulo_completo": "Proyecto de la Cámara (PC1594)",
+    "fecha_radicacion": "11/12/2026",
+    "resumen_breve": "Sistema Único de Trámite Legislativo Inicio Trámite Legislativo Prontuario Legislativo Directorio de Asamblea Legislativa Legislación Municipal Informes Ayuda Trámites Proyecto de la Cámara (PC1594) Cuatrienio: 2025-2028 Fecha de Radicación: 11/12/2026 Título: Para crear el Código de Modernización Agrícola a los fines de disponer y codificar la política pública agraria en general, a través de temas específicos que inciden sobre la agricultura, con el fin de propulsar nuestra seguridad alimentaria y el desarrollo económico, sobre todo en la zona rural de Puerto Rico, como interés apremiante; definir términos importantes del quehacer agrícola de Puerto Rico, delinear la Carta de Derechos del a",
     "temas_detectados": [
+      "Departamento de Educación",
+      "Salarios",
       "Trabajadores"
     ],
-    "checked_at": "2026-11-11T17:35:30.999812+00:00"
-  },
-  {
-    "id": "6fd1722f62073321a16f305d",
-    "url": "https://sutra.oslpr.org/medidas/162910",
-    "numero_o_nombre": "PS1625",
-    "titulo_completo": "Proyecto del Senado (PS1625)",
-    "fecha_radicacion": "11/10/2026",
-    "resumen_breve": "Sistema Único de Trámite Legislativo Inicio Trámite Legislativo Prontuario Legislativo Directorio de Asamblea Legislativa Legislación Municipal Informes Ayuda Trámites Proyecto del Senado (PS1625) Cuatrienio: 2025-2028 Fecha de Radicación: 11/10/2026 Título: Para derogar la Ley Núm. 16 de 5 de agosto de 1975, según enmendada, conocida como\n“Ley de Seguridad y Salud en el Trabajo”; establecer la “Ley de Seguridad y Salud\nOcupacional de Puerto Rico”, a fin de brindar una mayor protección al capital\nhumano del país, añadiendo definiciones, nuevas responsabilidades a los\nempleadores, estableciendo de forma clara y precisa el uso dinero recaudado en\nlas penalidades emitidas, mejorar el trámite ad",
-    "temas_detectados": [
-      "Trabajadores"
-    ],
-    "checked_at": "2026-11-11T17:35:30.999812+00:00"
+    "checked_at": "2026-11-12T17:48:35.618162+00:00"
   }
 ]
